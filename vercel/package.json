@@ -1,0 +1,16 @@
+{
+  "name": "litevfs-demo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "litevfs": "file:./litevfs-0.1.0.tgz",
+    "litevfs-linux-x64-gnu": "file:./litevfs-linux-x64-gnu-0.1.0.tgz",
+    "next": "13.4.19"
+  }
+}
