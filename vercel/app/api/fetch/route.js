@@ -5,10 +5,10 @@ export const dynamic = 'force-dynamic';
 export const revalidate = 0;
 export const runtime = 'nodejs';
 
+const db = new Database('demo.db');
+const stmt = db.prepare('SELECT id, data as value FROM (SELECT * FROM data ORDER BY id DESC LIMIT 20) ORDER BY id ASC');
+
 export function GET(request) {
-  const db = new Database('demo.db');
-  const stmt = db.prepare('SELECT id, data as value FROM (SELECT * FROM data ORDER BY id DESC LIMIT 20) ORDER BY id ASC');
- 
   const start = performance.now();
   const records = stmt.all();
   const latency = performance.now() - start;
