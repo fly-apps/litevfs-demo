@@ -5,7 +5,7 @@ primary_region = "iad"
 
 [env]
   PORT = "8080"
-  RUST_LOG = "info"
+  RUST_LOG = "info,litevfs=debug"
 
 [http_service]
   internal_port = 8080
