@@ -9,8 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "litevfs": "file:./litevfs-0.1.0.tgz",
-    "litevfs-linux-x64-gnu": "file:./litevfs-linux-x64-gnu-0.1.0.tgz",
+    "litevfs": "0.1.0",
     "next": "13.4.19"
   }
 }
